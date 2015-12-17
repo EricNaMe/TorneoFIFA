@@ -35,11 +35,11 @@ and open the template in the editor.
         <div id="menuSuperior" style="background:url(Imagenes/topMenu.jpeg); background-size: cover; "> 
         
             <ul id="ListaMenuSuperior">
-                <li><a>CLUBES PRO</a></li>
+                <li><a>HOLA</a></li>
                 <li><a>1 VS 1</a></li>
                 <li><a>REGLAMENTO</a></li>
                 <li><a>SALA DE TROFEOS</a></li>
-                <li><a>NOTICIAS</a></li>
+                <li><a>HOLA</a></li>
               
                  
             </ul>
