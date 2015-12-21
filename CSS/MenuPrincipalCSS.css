@@ -10,13 +10,15 @@ and open the template in the editor.
 
 #menuLateral 
 {     
+    z-index: 8;
     background-color: green;
     position:fixed; 
     float: left;
     height: 92%;
-    width: 22%;
+    width: 18%;
     left:0px; 
-    top:8%;
+    top:10%;
+    list-style-type: none;
 
 }
 
@@ -27,7 +29,7 @@ and open the template in the editor.
      margin-top: 50%;
      text-align: center;
      padding: 0;
-     list-style-type: none;
+     
      font-family: sans-serif;
      font-size: 16px;
      font-weight: bold;
@@ -45,7 +47,7 @@ and open the template in the editor.
   }
 
   ul#ListaMenuLateral a {
-         
+        
 	color: black;
 	text-decoration:none; 
 	padding: 20px 0; 
@@ -54,13 +56,41 @@ and open the template in the editor.
 }
 
 
+
+
 #ListaMenuLateral li:hover {
+   
        background-color: whitesmoke;
      }
+     
+     
    #ListaMenuLateral li:hover a {
+       
        color: black;
      }
      
+     
+     
+     #ListaMenuLateral li a.active{
+         background: #999; 
+     }
+     
+ #ListaMenuLateral li a:hover  {
+    background: #999; 
+   
+    color: #fff;
+}
+#ListaMenuLateral li ul {
+    padding: 0px;
+    list-style-type: none;
+    display: none; // used to hide sub-menus
+}
+#ListaMenuLateral li ul li a {
+  
+    padding: 10px 35px;
+    background: whitesmoke;
+    border-bottom: 1px dotted #ccc;
+}    
 
 /* Todo lo respectivo a la barra superior*/
 
@@ -70,7 +100,7 @@ and open the template in the editor.
     background-color:yellow; 
     background-size: cover;
     position:fixed; 
-    height: 8%; 
+    height: 10%; 
     width: 100%;
     top:0px;
     left:0px;
@@ -119,10 +149,10 @@ and open the template in the editor.
 
     background-color: blue; 
     height: 122%;
-    width: 80%;
+    width: 100%;
     position: absolute;
  
-    left: 20%;
+    left: 18%;
     top: 8%;
     
 }

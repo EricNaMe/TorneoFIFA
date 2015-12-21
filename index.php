@@ -8,6 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="CSS/MenuPrincipalCSS.css" type="text/css" media="screen">
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
         <title></title>
     </head>
     <body>
@@ -15,15 +16,10 @@ and open the template in the editor.
         
         <div id="menuLateral" style="background: url(Imagenes/leftMenu.jpeg); background-size: cover;">
             
-              <ul id="ListaMenuLateral">
-                <li><a>CLUBES PRO</a></li>
-                <li><a>TORNEOS VIGENTES</a></li>
-                <li><a>CLUBES</a></li>
-                <li><a>JUGADORES</a></li>
-                <li><a>TRANSFERENCIAS</a></li>
-                <li><a>RANKING POR CLUBES</a></li>
-                 
-            </ul>
+          <ul id="ListaMenuLateral">
+              <li><a>HOME</a>
+               
+          </ul>
             
             
         </div>
@@ -35,11 +31,12 @@ and open the template in the editor.
         <div id="menuSuperior" style="background:url(Imagenes/topMenu.jpeg); background-size: cover; "> 
         
             <ul id="ListaMenuSuperior">
-                <li><a>HOLA</a></li>
-                <li><a>1 VS 1</a></li>
+                <li><a href="CLUBESPRO.php">CLUBES PRO</a></li>
+                <li><a href="PVSP.php">1 VS 1</a></li>
                 <li><a>REGLAMENTO</a></li>
                 <li><a>SALA DE TROFEOS</a></li>
-                <li><a>HOLA</a></li>
+                <li><a>NOTICIAS</a></li>
+                <li><a>LOGIN</a></li>
               
                  
             </ul>
@@ -53,5 +50,22 @@ and open the template in the editor.
             
         </div>
         
+        
     </body>
+    
+    <script>
+    
+    $(document).ready(function () {
+  $('#ListaMenuLateral > li > a').click(function(){
+    if ($(this).attr('class') != 'active'){
+      $('#ListaMenuLateral li ul').slideUp();
+      $(this).next().slideToggle();
+      $('#ListaMenuLateral li a').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+});
+    </script>
 </html>
+
+
